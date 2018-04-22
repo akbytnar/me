@@ -107,10 +107,14 @@ height:43vh !important;
 	float:right;
 	background-color: #cce3f1;
 }
-#wave_container:hover {
-	
-	/*background-color: #85c1bc;*/
+#wave_description{
+	display: none;
+	padding-top: 5vh;
+	height: 45vh !important;
+	float:right;
+	background-color: #cce3f1;
 }
+
 #mountain_container{
 	float:left;
 	background-color: #b3d0ef;

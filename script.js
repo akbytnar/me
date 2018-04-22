@@ -134,6 +134,14 @@ function showDescription(i){
       document.getElementById("it_container").style.display = "inherit";
       document.getElementById("it_description").style.display = "none";
       break;
+      case 7:
+      document.getElementById("wave_container").style.display = "none";
+      document.getElementById("wave_description").style.display = "inherit";
+      break;
+    case 8:
+      document.getElementById("wave_container").style.display = "inherit";
+      document.getElementById("wave_description").style.display = "none";
+      break;
     default:
       
       break;
