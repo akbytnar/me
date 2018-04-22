@@ -11,7 +11,7 @@ var TxtRotate = function(el, toRotate, period) {
 
 
 TxtRotate.prototype.tick = function() {
- //if($('#it_container').is(':hover')){
+
       var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -36,7 +36,7 @@ TxtRotate.prototype.tick = function() {
     this.loopNum++;
     delta = 500;
   }
-  
+
 
     setTimeout(function() {
      
@@ -53,7 +53,7 @@ TxtRotate.prototype.tick = function() {
   
  
  
- //}
+
 
   
   
@@ -113,15 +113,23 @@ window.onclick = function(event) {
 }
 
 
-function iconAction(i){
-  console.log(i);
-  var x = document.getElementsByTagName("BODY")[0];
-  switch( i ) {
+
+function showDescription(i){
+ console.log(i);
+ switch( i ) {
     case 1:
-      document.getElementById("mountain_container").style.backgroundColor = "#b3d0ef";
+    
+      document.getElementById("mountain_container").style.display = "none";
+      document.getElementById("mountain_description").style.display = "inherit";
+      break;
+    case 2:
+    console.log('sda');
+      document.getElementById("mountain_container").style.display = "inherit";
+      document.getElementById("mountain_description").style.display = "none";
       break;
     default:
-      x.style.backgroundColor = "white";
+      
       break;
   }
+
 }

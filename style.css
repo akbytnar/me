@@ -22,6 +22,7 @@
 
 
 body{
+	font-family: "Helvetica Neue";
   background-color: white;
   margin: 0;
 }
@@ -140,6 +141,18 @@ h2{
 	color: white;
 	margin:0;
 }
-#mountain_text{
+.description{
+	cursor: pointer;
 	display: none;
+	  text-align: left;
+	  font-weight: 200;
+	
+}
+#mountain_description{
+	background-color: #b3d0ef;
+	color: white;
+	float:left;
+padding:5vh 10%;
+width:30%;
+height:40vh !important;
 }
