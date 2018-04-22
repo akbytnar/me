@@ -9,8 +9,10 @@ var TxtRotate = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
+
 TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
+ //if($('#it_container').is(':hover')){
+      var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
   if (this.isDeleting) {
@@ -34,11 +36,33 @@ TxtRotate.prototype.tick = function() {
     this.loopNum++;
     delta = 500;
   }
+  
 
-  setTimeout(function() {
-    that.tick();
+    setTimeout(function() {
+     
+               that.tick();
+     
+      
+      
+       
+    
+
+    
   }, delta);
+
+  
+ 
+ 
+ //}
+
+  
+  
+ 
 };
+
+
+
+ 
 
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
@@ -56,19 +80,19 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 var myIndex = 0;
-carousel();
+//carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    // x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
+// function carousel() {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < x.length; i++) {
+//        x[i].style.display = "none";  
+//     }
+//     myIndex++;
+//     if (myIndex > x.length) {myIndex = 1}    
+//     // x[myIndex-1].style.display = "block";  
+//     setTimeout(carousel, 4000);    
+// }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
