@@ -83,9 +83,12 @@ small{
 	font-weight: 200;
 	font-size: 12px;
 }
-#small_name{
+.small_name{
 color:#99b9f5;
 cursor: auto;
+
+	font-weight: 200;
+font-size: 12px;
 }
 .txt-rotate{
 	font-size: 20px;
