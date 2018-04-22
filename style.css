@@ -80,8 +80,8 @@ font-family: 'Press Start 2P', cursive;
 }
 #mountain_container{
 		    text-align: center;
-padding-top:10vh;
-height:40vh !important;
+padding-top:5vh;
+height:45vh !important;
 }
 #pathBox{
 	padding-top: 35%;
@@ -115,10 +115,10 @@ height:40vh !important;
 	float:left;
 }
 #gory{
-  width:350px;
+  width:400px;
 }
 #gory:hover {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
