@@ -29,8 +29,8 @@ body{
 
 
 .image {
-  width:250px;
-  height:250px;
+  width:200px;
+  height:200px;
   animation: spin 10s linear infinite;
   animation-play-state: paused; 
 }
@@ -75,8 +75,16 @@ path{
  width: 100%;
  text-align: center;
   top:40%;
-}
 
+}
+small{
+	color:white;
+	font-weight: 200;
+	font-size: 12px;
+}
+#small_name{
+color:#1955c3;
+}
 .txt-rotate{
 	font-size: 20px;
 font-family: 'Press Start 2P', cursive;
@@ -84,8 +92,8 @@ font-family: 'Press Start 2P', cursive;
 }
 #mountain_container{
 		    text-align: center;
-padding-top:5vh;
-height:45vh !important;
+padding-top:7vh;
+height:43vh !important;
 }
 #pathBox{
 	padding-top: 35%;
@@ -108,7 +116,16 @@ height:45vh !important;
 
 #it_container{ 
 	float:right;
-	background-color: #d6f5ec;
+	background-color:#d2ebe0
+	/*background-color: #d6f5ec;*/
+}
+#it_description{
+	float:right;
+		display: none;
+	background-color: #d2ebe0;
+	padding:10vh 10%;
+	width:30%;
+	height:30vh !important;
 }
 
 #design_container{
@@ -119,7 +136,7 @@ height:40vh !important;
 	float:left;
 }
 #gory{
-  width:400px;
+  width:350px;
 }
 #gory:hover {
 	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
@@ -142,24 +159,33 @@ h2{
 	margin:0;
 }
 .description{
-	
-	display: none;
-	  text-align: left;
+	text-align: left;
 	  font-weight: 200;
 	      letter-spacing: 1.2px;
+	color: white;
 	
 }
-#mountain_description{
+#mountain_description{float:left;
+		display: none;
 	background-color: #b3d0ef;
-	color: white;
+	padding:10vh 10%;
+	width:30%;
+	height:30vh !important;
+}
+#design_description{
 	float:left;
-padding:10vh 10%;
-width:30%;
-height:30vh !important;
+		display: none;
+	background-color: #f3d1d1;
+	padding:10vh 10%;
+	width:30%;
+	height:30vh !important;
 }
 .icon{
 	cursor: pointer;
 	width: 10px;
+}
+.icon_biger{
+	width: 15px;
 }
 small{
 cursor: pointer;

@@ -41,12 +41,6 @@ TxtRotate.prototype.tick = function() {
     setTimeout(function() {
      
                that.tick();
-     
-      
-      
-       
-    
-
     
   }, delta);
 
@@ -123,6 +117,22 @@ function showDescription(i){
     case 2:
       document.getElementById("mountain_container").style.display = "inherit";
       document.getElementById("mountain_description").style.display = "none";
+      break;
+    case 3:
+      document.getElementById("design_container").style.display = "none";
+      document.getElementById("design_description").style.display = "inherit";
+      break;
+    case 4:
+      document.getElementById("design_container").style.display = "inherit";
+      document.getElementById("design_description").style.display = "none";
+      break;
+    case 5:
+      document.getElementById("it_container").style.display = "none";
+      document.getElementById("it_description").style.display = "inherit";
+      break;
+    case 6:
+      document.getElementById("it_container").style.display = "inherit";
+      document.getElementById("it_description").style.display = "none";
       break;
     default:
       
