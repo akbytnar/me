@@ -1,3 +1,26 @@
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+
+
+
+
+
 body{
   background-color: white;
   margin: 0;
@@ -5,8 +28,8 @@ body{
 
 
 .image {
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
   animation: spin 10s linear infinite;
   animation-play-state: paused; 
 }
@@ -23,15 +46,11 @@ body{
 
 path{
 	
-	animation: dash 2s linear alternate infinite;
-	animation-play-state: paused; 
-
-}
-
-path:hover{
+	animation: dash 10s linear alternate infinite;
+	/*animation-play-state: paused; */
 	stroke-dasharray: 500;
   	stroke-dashoffset: 500;
-	animation-play-state: running;
+
 }
 
 @keyframes dash {
@@ -39,14 +58,19 @@ path:hover{
     stroke-dashoffset: 0;
   }
 }
+#autoText{
+	margin-top: 15vh;
+	text-align: center;
+}
 #name{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "Helvetica Neue";
   position: absolute;
   z-index: 10;
-  left:35%;
-  top:30%;
+ width: 100%;
+ text-align: center;
+  top:40%;
 }
 
 .txt-rotate{
@@ -54,41 +78,62 @@ path:hover{
 font-family: 'Press Start 2P', cursive;
 
 }
-
+#mountain_container{
+		    text-align: center;
+padding-top:10vh;
+height:40vh !important;
+}
 #pathBox{
 	padding-top: 35%;
 	padding-left: 30%
 }
 #wave_container{
+	padding-top: 5vh;
+	height: 45vh !important;
 	float:right;
+	background-color: #cce3f1;
 }
 #wave_container:hover {
+	
 	/*background-color: #85c1bc;*/
 }
 #mountain_container{
 	float:left;
+	background-color: #b3d0ef;
 }
-#mountain_container
+
 #it_container{ 
 	float:right;
+	background-color: #d6f5ec;
 }
 
 #design_container{
+	background-color: #f3d1d1;
+padding-top:10vh;
+height:40vh !important;
+	    text-align: center;
 	float:left;
 }
-.icon{
-  width:50px;
+#gory{
+  width:350px;
 }
-
+#gory:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
 .box{
   width:100%;
   height:100vh;
 }
 .container{
+	cursor: pointer;
   height:50vh;
   width: 50%;
 }
 
 h2{
+	color: white;
 	margin:0;
 }

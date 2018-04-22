@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="serce.png" />
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="style.css">
