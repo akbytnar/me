@@ -109,10 +109,10 @@ height:43vh !important;
 }
 #wave_description{
 	display: none;
-	padding-top: 5vh;
-	height: 45vh !important;
+	padding:10vh 10%;
+	width:30%;
+	height:30vh !important;
 	float:right;
-		/*//padding:10vh 10%;*/
 	background-color: #cce3f1;
 }
 
