@@ -146,6 +146,7 @@ h2{
 	display: none;
 	  text-align: left;
 	  font-weight: 200;
+	      letter-spacing: 1.2px;
 	
 }
 #mountain_description{
@@ -155,4 +156,10 @@ h2{
 padding:5vh 10%;
 width:30%;
 height:40vh !important;
+}
+.icon{
+	width: 10px;
+}
+small{
+	    vertical-align: top;
 }

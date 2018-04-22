@@ -115,15 +115,12 @@ window.onclick = function(event) {
 
 
 function showDescription(i){
- console.log(i);
  switch( i ) {
     case 1:
-    
       document.getElementById("mountain_container").style.display = "none";
       document.getElementById("mountain_description").style.display = "inherit";
       break;
     case 2:
-    console.log('sda');
       document.getElementById("mountain_container").style.display = "inherit";
       document.getElementById("mountain_description").style.display = "none";
       break;
