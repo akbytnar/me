@@ -15,8 +15,24 @@
     transform: translate3d(10px, 0, 0);
   }
 }
+ .notresp{
+    	display: none;
+    		color: #99b9f5;
+    	text-align: center;
+    	margin-top: 30vh;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+@media only screen and (max-width: 1024px) {
+    .box {
+    
 
-
+        display: none !important;
+    }
+    .notresp{
+    	display: inherit;
+    }
+}
 
 
 
