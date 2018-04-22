@@ -72,9 +72,10 @@ path{
   font-family: "Helvetica Neue";
   position: absolute;
   z-index: 10;
- width: 100%;
+ width: auto;
  text-align: center;
   top:40%;
+  left:42%;
 
 }
 small{
