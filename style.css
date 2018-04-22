@@ -22,20 +22,25 @@
 
 
 body{
-	font-family: "Helvetica Neue";
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: "Helvetica Neue";*/
   background-color: white;
   margin: 0;
 }
 
 
 .image {
+	display: inline-block;
   width:200px;
   height:200px;
   animation: spin 10s linear infinite;
+  -webkit-animation: spin 10s linear infinite;
+   -webkit-animation-play-state: paused; 
   animation-play-state: paused; 
 }
 
 .image:hover {
+	  -webkit-animation-play-state: running;
   animation-play-state: running;
 }
 
@@ -44,9 +49,8 @@ body{
   100% {transform: rotate(1turn); }
 }
 @-webkit-keyframes spin{
-    100% {transform: rotate(1turn); }}
-@-moz-keyframes spin{
-    100% {transform: rotate(1turn); }}
+    100% {-webkit-transform:: rotate(1turn); }
+}
 
 path{
 	
@@ -69,7 +73,8 @@ path{
 #name{
   font-size: 40px;
   font-weight: bold;
-  font-family: "Helvetica Neue";
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: "Helvetica Neue";*/
   position: absolute;
   z-index: 10;
  width: auto;
@@ -171,7 +176,7 @@ h2{
 .description{
 	text-align: left;
 	  font-weight: 200;
-	      letter-spacing: 1.2px;
+	      letter-spacing: 1px;
 	color: white;
 	
 }
