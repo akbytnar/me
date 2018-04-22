@@ -142,7 +142,7 @@ h2{
 	margin:0;
 }
 .description{
-	cursor: pointer;
+	
 	display: none;
 	  text-align: left;
 	  font-weight: 200;
@@ -158,8 +158,16 @@ width:30%;
 height:30vh !important;
 }
 .icon{
+	cursor: pointer;
 	width: 10px;
 }
 small{
+cursor: pointer;
 	    vertical-align: top;
+}
+.mt0{
+	margin-top: 0 !important;
+}
+.mb0{
+	margin-bottom: 0 !important;
 }
