@@ -190,6 +190,7 @@ h2{
 	margin:0;
 }
 .description{
+	cursor: pointer;
 	text-align: left;
 	  font-weight: 200;
 	      letter-spacing: 1px;
