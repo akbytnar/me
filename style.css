@@ -33,13 +33,29 @@
     	display: inherit;
     }
 }
-
+@media only screen and (max-width: 1250px) {
+    p{
+    	font-size: 12px;
+    }
+    h2{
+    	font-size: 20px;
+    }
+    .description{
+    	padding: 10vh 7%;
+    }
+    #gory{
+    	width:200px !important;
+    }
+    .image{
+    	width:150px !important;
+    	height: 150px !important;
+    }
+}
 
 
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	/*font-family: "Helvetica Neue";*/
   background-color: white;
   margin: 0;
 }
@@ -71,7 +87,6 @@ body{
 path{
 	
 	animation: dash 10s linear alternate infinite;
-	/*animation-play-state: paused; */
 	stroke-dasharray: 500;
   	stroke-dashoffset: 500;
 
@@ -90,8 +105,7 @@ path{
   font-size: 40px;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
-  /*font-family: "Helvetica Neue";*/
-  position: absolute;
+    position: absolute;
   z-index: 10;
  width: auto;
  text-align: center;
