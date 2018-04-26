@@ -243,3 +243,11 @@ cursor: pointer;
 .mb0{
 	margin-bottom: 0 !important;
 }
+#in{
+	cursor: pointer;
+	color: white;
+    cursor: auto;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
